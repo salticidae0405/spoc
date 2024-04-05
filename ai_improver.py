@@ -13,7 +13,7 @@ from PIL import Image
 
 
 def general_corrector(prompt, temperature,model = OPENAIMODEL ,max_tokens = 200):
-    openai.api_key = "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"
+    openai.api_key = "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"
     res = openai.Completion.create(model=model,prompt=prompt,temperature=temperature,max_tokens=max_tokens)
     return res['choices'][0]['text']
 
