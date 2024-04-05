@@ -1,3 +1,5 @@
+mport pkg_resources
+pkg_resources.require("openai==0.28.0")
 import openai
 from utils import * 
 from constants import *
