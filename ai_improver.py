@@ -5,6 +5,10 @@ from utils import *
 from constants import *
 openai.api_key = OPENAIKEY
 import streamlit as st
+
+st.write(st.session_state)
+realans = ['', 'abc', 'edf']
+
 from io import StringIO
 from PIL import Image
 
