@@ -15,7 +15,7 @@ from PIL import Image
 
 def general_corrector(prompt, temperature,model = OPENAIMODEL,max_tokens = 20):
     openai.api_key = OPENAIKEY
-    res = openai.Completion.create(model=model,prompt=prompt,temperature=temperature,max_tokens=max_tokens)
+    res = openai.completion.create(model=model,prompt=prompt,temperature=temperature,max_tokens=max_tokens)
     return res['choices'][0]['text']
 
 def single_experience_corrector(experience_text):
