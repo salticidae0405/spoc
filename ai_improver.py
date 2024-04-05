@@ -12,7 +12,7 @@ from io import StringIO
 from PIL import Image
 
 
-def general_corrector(prompt, temperature,model = models,max_tokens = 200):
+def general_corrector(prompt, temperature,model = model,max_tokens = 200):
     openai.api_key = "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"
     res = openai.Completion.create(model=model,prompt=prompt,temperature=temperature,max_tokens=max_tokens)
     return res['choices'][0]['text']
